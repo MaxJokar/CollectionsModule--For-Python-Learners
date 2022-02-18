@@ -97,9 +97,9 @@ from numpy import equal
 
 
 
-Person=collections.namedtuple("Person", "name age avg children")
-person1=Person("Andy",20,20,["Nina","David"])
-person2=Person("Andy",10,50,["Rose","Philip"])
+# Person=collections.namedtuple("Person", "name age avg children")
+# person1=Person("Andy",20,20,["Nina","David"])
+# person2=Person("Andy",10,50,["Rose","Philip"])
 
 #to have  an Iterable :
 #_make  helps to Open a  person into a list:
@@ -134,6 +134,52 @@ person2=Person("Andy",10,50,["Rose","Philip"])
 
 
 #UserList UserString:
+# list1=[12,23,45,89,78]
+# list1.remove(78)
+# print(list1)
+
+
+
+class MyList(collections.UserList):
+    def remove(self):
+        raise RuntimeError(" Delete Not Allowed")
+
+
+# list1=MyList([12,23,45,89,78])
+# print(list1)
+# list1.remove(78)
+# print(list1)
+
+# list1=MyList([12,23,45,89,78])
+# print(list1)
+#     try:
+#       print(x)
+#     except:
+#       print('An exception occurred')
+#        print(x)
+      
+# list1.remove(78)
+# print(list1)
+
+# Add a  new function To ReMove a Letter or  sth
+class MyString(collections.UserString):
+     def remove(self,s):
+         self.data=self.data.replace(s, "")
+    
+str1=MyString("Max")    
+# str1="Maxim Jokar"    
+str1.remove("ax")
+print(str1)
+
+
+
+
+
+
+
+
+
+
 
 
 
