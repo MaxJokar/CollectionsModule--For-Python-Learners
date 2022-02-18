@@ -1,5 +1,7 @@
 import collections
 
+from numpy import equal
+
 
 #counter:
 #its output will be  a  dictionary :shows how many times each word  repeated
@@ -107,6 +109,71 @@ person2=Person("Andy",10,50,["Rose","Philip"])
 
 #or
 # print(Person._make(person1))
+
+#_asdict: make a dic 
+# print(person1._asdict())
+
+
+#field:gives  Tuples:drags its fields
+# print(person1._fields)
+
+
+#deque:to make a queue :make lists to be able to put at first or end or from end to first
+# dq1=collections.deque([1,2,3,4])
+# print(dq1)
+# dq1.append(5)
+# print(dq1)
+# print()
+# dq1.appendleft(6)
+# print(dq1)
+
+# dq1.pop() # take one from the last item
+# print(dq1)
+# dq1.popleft()
+# print(dq1)
+
+
+#UserList UserString:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
